@@ -1,0 +1,1705 @@
+html, body {
+    overflow-x: hidden !important;
+    background-color: #000000 !important;
+    
+}
+
+.header-image {
+    position: relative;
+    height: 100vh;
+}
+
+#myVideo {
+    height: 100%;
+    width: 100%;
+    object-fit: unset;
+    
+}
+
+.header-text {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
+
+.header-text h2 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.header-text h2 a {
+    text-decoration: none;
+}
+
+.brand-navbar {
+    border-image: none !important;
+}
+
+.navbar .brand-navbar img:hover {
+    opacity: 0.7;
+}
+
+.navbar ul {
+    padding: 0px 10px 0px 0px;
+}
+
+.navbar ul li a {
+    color: white;
+    margin: 10px 0px 0px 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+    
+}
+
+.navbar ul li a .fas {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.navbar ul li a:hover {
+    color: #44c6c6;
+}
+
+.navbar ul li.active>a {
+    color: #44c6c6;
+    font-weight: bold;
+    font-size: 16px;
+    border-left: 3px solid #44c6c6;
+    border-radius: 40px;
+}
+
+.iconStyle {
+    color: #44c6c6;
+}
+
+/*about*/
+
+.aboutme-section {
+    padding: 90px 0px;
+    background-color: white;
+    height: 100vh;
+   
+}
+.h-img{
+    max-width: 400px;
+    margin-right: 100px;
+}
+.aboutme-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: 32px;
+    margin: 0 0 39px;
+    padding: 0 0 11px;
+    position: relative;
+    color: #000000;
+}
+
+.aboutme-title::after {
+    font-family: 'Montserrat', sans-serif;
+    background: #44c6c6 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 54px;
+}
+
+.aboutme-text {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 0 35px;
+}
+
+/*skills*/
+
+.holderCircle {
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    margin: 60px 60px 60px 100px;
+    position: absolute;
+}
+
+.container-skills {
+    background-color: #000000;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80vh !important;
+    font-family: "Montserrat", sans-serif;
+}
+
+.dotCircle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 100%;
+    z-index: 20;
+}
+
+.dotCircle .itemDot {
+    display: block;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    background: #ffffff;
+    color: #44c6c6;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 80px;
+    font-size: 25px;
+    z-index: 3;
+    cursor: pointer;
+    border: 2px solid #e6e6e6;
+}
+
+.dotCircle .itemDot .forActive {
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+
+.dotCircle .itemDot .forActive::after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border: 3px solid #44c6c6;
+    bottom: -31px;
+    left: -14px;
+    filter: blur(1px);
+    position: absolute;
+    border-radius: 100%;
+}
+
+.dotCircle .itemDot .forActive::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    filter: blur(5px);
+    top: -15px;
+    position: absolute;
+    transform: rotate(-45deg);
+    border: 6px solid #44c6c6;
+    right: -39px;
+}
+
+.round {
+    position: absolute;
+    left: 40px;
+    top: 45px;
+    width: 410px;
+    height: 410px;
+    border: 2px dotted #44c6c6;
+    border-radius: 100%;
+    -webkit-animation: rotation 100s infinite linear;
+}
+
+.dotCircle .itemDot:hover, .dotCircle .itemDot.active {
+    color: #ffffff;
+    transition: 0.5s;
+    background: #44c6c6;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #44c6c6 0%, #44c6c6 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #44c6c6 0%, #44c6c6 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #44c6c6 0%, #44c6c6 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7d4ac7', endColorstr='#a733bb', GradientType=1);
+    /* IE6-9 */
+    border: 2px solid #ffffff;
+    -webkit-box-shadow: 0 30px 30px 0 rgba(0, 0, 0, .0);
+    -moz-box-shadow: 0 30px 30px 0 rgba(0, 0, 0, .0);
+    box-shadow: 0 30px 30px 0 rgba(0, 0, 0, .0);
+}
+
+.dotCircle .itemDot {
+    font-size: 40px;
+}
+
+.contentCircle {
+    width: 250px;
+    border-radius: 100%;
+    color: #fff;
+    position: relative;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contentCircle .CirItem {
+    border-radius: 100%;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.5s;
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    margin: auto;
+    line-height: 250px;
+}
+
+.CirItem.active {
+    z-index: 1;
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.contentCircle .CirItem i {
+    font-size: 180px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -90px;
+    color: #000000;
+    opacity: 0.1;
+}
+
+.title-box .title {
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: -1;
+}
+
+.title-box span {
+    text-shadow: 0 10px 10px rgba(0, 0, 0, .15);
+    font-weight: 800;
+    color: #44c6c6;
+}
+
+.title-box p {
+    font-size: 17px;
+    line-height: 2em;
+}
+
+/*media screen small*/
+
+@media only screen and (min-width:300px) and (max-width:599px) {
+    .holderCircle {
+        width: 380px;
+        height: 380px;
+        margin-left: 20px;
+    }
+    .holderCircle::after {
+        width: 100%;
+        height: 100%;
+    }
+    .dotCircle {
+        width: 380px;
+        height: 380px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0px;
+        margin: auto;
+    }
+    .round {
+        position: absolute;
+        left: 40px;
+        top: 45px;
+        width: 310px;
+        height: 310px;
+        border: 2px dotted #44c6c6;
+        border-radius: 100%;
+        -webkit-animation: rotation 100s infinite linear;
+    }
+    .container-skills {
+        background-color: #000000;
+        position: inherit;
+        font-family: "Montserrat", sans-serif;
+        height: 60vh !important;
+        padding-left: 5px;
+    }
+    .contentCircle {
+        width: 250px;
+        border-radius: 100%;
+        color: #fff;
+        position: relative;
+        top: 100px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .title-box .title {
+        font-weight: 200;
+        letter-spacing: 2px;
+        position: relative;
+        z-index: -1;
+    }
+    .title-box p {
+        font-size: 14px;
+        line-height: 2em;
+        text-align: center;
+    }
+    .dotCircle .itemDot {
+        font-size: 40px;
+    }
+    .dotCircle .itemDot {
+        display: block;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background: #ffffff;
+        color: #44c6c6;
+        border-radius: 10px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 50px;
+        font-size: 25px;
+        z-index: 3;
+        cursor: pointer;
+        border: 1px solid #e6e6e6;
+    }
+    .header-image {
+        height: 50vh !important;
+        background-size: contain;
+    }
+    .aboutme-section {
+        padding: 90px 0px;
+        background-color: white;
+        height: auto;
+        padding-left: 15px;
+    }
+    .aboutme-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: 32px;
+        margin: 0 0 39px;
+        padding: 30px 0 11px;
+        position: relative;
+        color: #000000;
+    }
+    .aboutme-title::after {
+        font-family: 'Montserrat', sans-serif;
+        background: #44c6c6 none repeat scroll 0 0;
+        bottom: 0;
+        content: "";
+        height: 2px;
+        left: 170px;
+        position: absolute;
+        width: 54px;
+    }
+    .aboutme-text {
+        font-family: 'Montserrat', sans-serif;
+        color: #000000;
+        font-size: 16px;
+        line-height: 22px;
+        margin: 0 0 35px;
+    }
+}
+
+/*========*/
+
+@media only screen and (min-width:300px) and (max-width:500px) {
+    .holderCircle {
+        width: 210px;
+        height: 210px;
+        margin-left: 0px;
+    }
+    .skillss {
+        background-color: #000000;
+        width: 100%;
+        margin-top: 0;
+        margin-left: 0px;
+        height: 85vh;
+    }
+    .holderCircle::after {
+        width: 100%;
+        height: 100%;
+    }
+    .dotCircle {
+        width: 360px;
+        height: 360px;
+        top: 90px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    .round {
+        position: absolute;
+        left: 40px;
+        top: 10px;
+        width: 280px;
+        height: 280px;
+        border: 2px dotted #44c6c6;
+        border-radius: 100%;
+        -webkit-animation: rotation 100s infinite linear;
+    }
+    .container-skills {
+        background-color: #000000;
+        position: inherit;
+        font-family: "Montserrat", sans-serif;
+    }
+    .contentCircle {
+        width: 200px;
+        border-radius: 100%;
+        color: #fff;
+        position: relative;
+        top: 70px;
+        left: 82%;
+        transform: translate(-50%, -50%);
+    }
+    .title-box .title {
+        font-weight: 150;
+        letter-spacing: 1px;
+        position: relative;
+        z-index: -1;
+    }
+    .title-box p {
+        font-size: 12px;
+        line-height: 2em;
+        text-align: center;
+    }
+    .dotCircle .itemDot {
+        font-size: 90px;
+    }
+    .dotCircle .itemDot {
+        display: block;
+        width: 55px;
+        height: 55px;
+        position: absolute;
+        background: #ffffff;
+        color: #44c6c6;
+        border-radius: 10px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 55px;
+        font-size: 25px;
+        z-index: 3;
+        cursor: pointer;
+        border: 1px solid #e6e6e6;
+    }
+    .header-image {
+        height: 50vh !important;
+    }
+    .aboutme-section {
+        padding: 90px 0px;
+        background-color: white;
+        height: auto;
+    }
+    .aboutme-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: 32px;
+        margin: 0 0 39px;
+        padding: 30px 0 11px;
+        position: relative;
+        color: #000000;
+    }
+    .aboutme-title::after {
+        font-family: 'Montserrat', sans-serif;
+        background: #44c6c6 none repeat scroll 0 0;
+        bottom: 0;
+        content: "";
+        height: 2px;
+        left: 130px;
+        position: absolute;
+        width: 54px;
+    }
+    .aboutme-text {
+        font-family: 'Montserrat', sans-serif;
+        color: #000000;
+        font-size: 16px;
+        line-height: 22px;
+        margin: 0 0 35px;
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width:320px) {
+    .holderCircle {
+        width: 210px;
+        height: 210px;
+        margin-left: 0px;
+    }
+    .skillss {
+        background-color: #000000;
+        width: 100%;
+        margin-top: 0;
+        margin-left: 0px;
+        height: 85vh;
+    }
+    .holderCircle::after {
+        width: 100%;
+        height: 100%;
+    }
+    .dotCircle {
+        width: 260px;
+        height: 260px;
+        top: 60px;
+        right: 0;
+        bottom: 0;
+        left: 10px;
+    }
+    .round {
+        position: absolute;
+        left: 40px;
+        top: 30px;
+        width: 210px;
+        height: 210px;
+        border: 2px dotted #44c6c6;
+        border-radius: 100%;
+        -webkit-animation: rotation 100s infinite linear;
+    }
+    .container-skills {
+        background-color: #000000;
+        font-family: "Montserrat", sans-serif;
+    }
+    .contentCircle {
+        width: 200px;
+        border-radius: 100%;
+        color: #fff;
+        position: relative;
+        top: 70px;
+        left: 82%;
+        transform: translate(-50%, -50%);
+    }
+    .title-box .title {
+        font-weight: 30;
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin-top: 50px;
+        margin-right: 40px;
+        z-index: -1;
+    }
+    .title-box p {
+        font-size: 8px;
+        font-stretch: narrower;
+        text-align: center !important;
+        color: #000000;
+    }
+    .dotCircle .itemDot {
+        display: block;
+        width: 55px;
+        height: 55px;
+        position: absolute;
+        background: #ffffff;
+        color: #44c6c6;
+        border-radius: 10px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 55px;
+        font-size: 25px;
+        z-index: 3;
+        cursor: pointer;
+        border: 1px solid #e6e6e6;
+    }
+    .header-image {
+        height: 50vh !important;
+    }
+    .aboutme-section {
+        padding: 90px 0px;
+        background-color: white;
+        height: auto;
+    }
+    .aboutme-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: 32px;
+        margin: 0 0 39px;
+        padding: 30px 0 11px;
+        position: relative;
+        color: #000000;
+    }
+    .aboutme-title::after {
+        font-family: 'Montserrat', sans-serif;
+        background: #44c6c6 none repeat scroll 0 0;
+        bottom: 0;
+        content: "";
+        height: 2px;
+        left: 100px;
+        position: absolute;
+        width: 54px;
+    }
+    .aboutme-text {
+        font-family: 'Montserrat', sans-serif;
+        color: #000000;
+        font-size: 16px;
+        line-height: 22px;
+        margin: 0 0 35px;
+    }
+}
+
+/*=================================================*/
+
+@media only screen and (min-width:760px) and (max-width:955px) {
+    .container-skills {
+        background-color: #000000;
+        margin-top: 0px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 80vh !important;
+        font-family: "Montserrat", sans-serif;
+    }
+    .dotCircle {
+        top: 50px;
+        right: 0;
+        bottom: 0;
+        left: 50px;
+    }
+    .dotCircle .itemDot {
+        display: block;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        background: #ffffff;
+        color: #44c6c6;
+        border-radius: 20px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 80px;
+        font-size: 25px;
+        z-index: 3;
+        cursor: pointer;
+        border: 2px solid #e6e6e6;
+    }
+    .dotCircle .itemDot .forActive::before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        filter: blur(5px);
+        top: -15px;
+        position: absolute;
+        transform: rotate(-45deg);
+        border: 6px solid #44c6c6;
+        right: -39px;
+    }
+    .round {
+        position: absolute;
+        left: 100px;
+        top: 55px;
+        width: 410px;
+        height: 410px;
+        border: 2px dotted #44c6c6;
+        border-radius: 100%;
+        -webkit-animation: rotation 100s infinite linear;
+    }
+    .dotCircle .itemDot {
+        font-size: 40px;
+    }
+    .contentCircle {
+        width: 250px;
+        border-radius: 100%;
+        color: #fff;
+        position: relative;
+        top: 150px;
+        left: 60%;
+        transform: translate(-50%, -50%);
+    }
+    .contentCircle .CirItem {
+        border-radius: 100%;
+        color: #fff;
+        position: absolute;
+        text-align: center;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        transform: scale(0);
+        transition: 0.5s;
+        font-size: 15px;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        margin: auto;
+        line-height: 250px;
+    }
+    .CirItem.active {
+        z-index: 1;
+        opacity: 1;
+        transform: scale(1);
+        transition: 0.5s;
+    }
+    .contentCircle .CirItem i {
+        font-size: 180px;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        margin-left: -90px;
+        color: #000000;
+        opacity: 0.1;
+    }
+    .title-box .title {
+        font-weight: 600;
+        letter-spacing: 2px;
+        position: relative;
+        z-index: -1;
+    }
+    .title-box span {
+        text-shadow: 0 10px 10px rgba(0, 0, 0, .15);
+        font-weight: 800;
+        color: #44c6c6;
+    }
+    .title-box p {
+        font-size: 17px;
+        line-height: 2em;
+    }
+    .header-image {
+        height: 90vh !important;
+    }
+    .aboutme-section {
+        padding: 90px 0px;
+        background-color: white;
+        height: 100vh;
+    }
+    .aboutme-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: 32px;
+        margin: 0 0 39px;
+        padding: 30px 0 11px;
+        position: relative;
+        color: #000000;
+    }
+    .aboutme-title::after {
+        font-family: 'Montserrat', sans-serif;
+        background: #44c6c6 none repeat scroll 0 0;
+        bottom: 0;
+        content: "";
+        height: 2px;
+        left: 130px;
+        position: absolute;
+        width: 54px;
+    }
+    .aboutme-text {
+        font-family: 'Montserrat', sans-serif;
+        color: #000000;
+        font-size: 16px;
+        line-height: 22px;
+        margin: 0 0 35px 35px;
+    }
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+  .header-image {
+    position: relative;
+    height: 50vh;
+}
+
+    .aboutme-section{
+        height: 65vh;
+    }
+  .header-text h2 {
+    padding-bottom: 500px;
+}
+
+
+.container-skills {
+        background-color: #000000;
+        margin-right: 550px !important;
+        height: 40vh !important;
+        font-family: "Montserrat", sans-serif;
+    }
+    .dotCircle {
+        top: 50px;
+        right: 0;
+        bottom: 0;
+        left: 50px;
+    }
+    .dotCircle .itemDot {
+        display: block;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        background: #ffffff;
+        color: #44c6c6;
+        border-radius: 20px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 80px;
+        font-size: 25px;
+        z-index: 3;
+        cursor: pointer;
+        border: 2px solid #e6e6e6;
+    }
+    .dotCircle .itemDot .forActive::before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        filter: blur(5px);
+        top: -15px;
+        position: absolute;
+        transform: rotate(-45deg);
+        border: 6px solid #44c6c6;
+        right: -39px;
+    }
+    .round {
+        position: absolute;
+        left: 100px;
+        top: 55px;
+        width: 410px;
+        height: 410px;
+        border: 2px dotted #44c6c6;
+        border-radius: 100%;
+        -webkit-animation: rotation 100s infinite linear;
+    }
+    .dotCircle .itemDot {
+        font-size: 40px;
+    }
+    .contentCircle {
+        width: 250px;
+        border-radius: 100%;
+        color: #fff;
+        position: relative;
+        top: 150px;
+        left: 60%;
+        transform: translate(-50%, -50%);
+    }
+    .contentCircle .CirItem {
+        border-radius: 100%;
+        color: #fff;
+        position: absolute;
+        text-align: center;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        transform: scale(0);
+        transition: 0.5s;
+        font-size: 15px;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        margin: auto;
+        line-height: 250px;
+    }
+    .CirItem.active {
+        z-index: 1;
+        opacity: 1;
+        transform: scale(1);
+        transition: 0.5s;
+    }
+    .contentCircle .CirItem i {
+        font-size: 180px;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        margin-left: -90px;
+        color: #000000;
+        opacity: 0.1;
+    }
+    .title-box .title {
+        font-weight: 600;
+        letter-spacing: 2px;
+        position: relative;
+        z-index: -1;
+    }
+    .title-box span {
+        text-shadow: 0 10px 10px rgba(0, 0, 0, .15);
+        font-weight: 800;
+        color: #1E90FF;
+    }
+    .title-box p {
+        font-size: 17px;
+        line-height: 2em;
+    }
+    
+}
+
+@media only screen and (min-width:1200px) and (max-width:1499px) {
+}
+
+/* Projects*/
+
+#portfolio {
+    background: #fff !important;
+    font-family: "Montserrat", sans-serif;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #44c6c6;
+    border-color: #44c6c6;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #44c6c6;
+    border-color: #44c6c6;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #44c6c6;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+}
+
+#team .card {
+    border: none;
+    background: #ffffff;
+}
+
+.image-flip:hover .backside, .image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside, .image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside, .backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card, .backside .card {
+    min-height: 312px;
+}
+
+.backside .card a {
+    font-size: 18px;
+    color: #44c6c6 !important;
+    font-family: "Montserrat", sans-serif;
+}
+
+.frontside .card .card-title, .backside .card .card-title {
+    color: #44c6c6 !important;
+    font-family: "Montserrat", sans-serif;
+}
+
+.frontside .card .card-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 0%;
+}
+
+/* experience*/
+
+.main-timeline5 {
+    overflow: hidden;
+    position: relative;
+}
+
+.main-timeline5 .timeline {
+    position: relative;
+    margin-top: -77px
+}
+
+.main-timeline5 .timeline:first-child {
+    margin-top: 0
+}
+
+.main-timeline5 .timeline-icon, .main-timeline5 .year {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0
+}
+
+.main-timeline5 .timeline:after, .main-timeline5 .timeline:before {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both
+}
+
+.main-timeline5 .timeline:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    box-shadow: -8px 0 5px -5px rgba(0, 0, 0, .5) inset;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2
+}
+
+.main-timeline5 .timeline-icon {
+    width: 236px;
+    height: 236px;
+    border-radius: 50%;
+    border: 25px solid transparent;
+    border-top-color: #9244c6;
+    border-right-color: #9244c6;
+    z-index: 1;
+    transform: rotate(45deg)
+}
+
+.main-timeline5 .year {
+    display: block;
+    width: 110px;
+    height: 110px;
+    line-height: 110px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .4);
+    font-size: 30px;
+    font-weight: 700;
+    color: #9244c6;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    transform: rotate(-45deg)
+}
+
+.main-timeline5 .timeline-content {
+    width: 33%;
+    float: right;
+    background: #9244c6;
+    padding: 30px 20px;
+    margin: 50px 0;
+    z-index: 1;
+    position: relative
+}
+
+.main-timeline5 .timeline-content:before {
+    content: "";
+    width: 20%;
+    height: 15px;
+    background: #9244c6;
+    position: absolute;
+    top: 50%;
+    left: -20%;
+    z-index: -1;
+    transform: translateY(-50%)
+}
+
+.main-timeline5 .title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    margin: 0 0 6px
+}
+
+.main-timeline5 .description {
+    font-size: 16px;
+    color: #fff;
+    line-height: 16px;
+    font-family: "Montserrat", sans-serif;
+   
+}
+
+.main-timeline5 .timeline:nth-child(2n):before {
+    box-shadow: 1px 0 5px -5px rgba(0, 0, 0, .5) inset
+}
+
+.main-timeline5 .timeline:nth-child(2n) .timeline-icon {
+    transform: rotate(-135deg);
+    border-top-color: #44c6c6;
+    border-right-color: #44c6c6
+}
+
+.main-timeline5 .timeline:nth-child(2n) .year {
+    transform: rotate(135deg);
+    color: #44c6c6
+}
+
+.main-timeline5 .timeline:nth-child(2n) .timeline-content {
+    float: left
+}
+
+.main-timeline5 .timeline:nth-child(2n) .timeline-content:before {
+    left: auto;
+    right: -20%
+}
+
+.main-timeline5 .timeline:nth-child(2n) .timeline-content, .main-timeline5 .timeline:nth-child(2n) .timeline-content:before {
+    background: #44c6c6
+}
+
+.main-timeline5 .timeline:nth-child(3n) .timeline-icon {
+    border-top-color: #44c692;
+    border-right-color: #44c692
+}
+
+.main-timeline5 .timeline:nth-child(3n) .year {
+    color: #44c692
+}
+
+.main-timeline5 .timeline:nth-child(3n) .timeline-content, .main-timeline5 .timeline:nth-child(3n) .timeline-content:before {
+    background: #44c692
+}
+
+.main-timeline5 .timeline:nth-child(4n) .timeline-icon {
+    border-top-color: #c6449d;
+    border-right-color: #c6449d
+}
+
+.main-timeline5 .timeline:nth-child(4n) .year {
+    color: #c6449d
+}
+
+.main-timeline5 .timeline:nth-child(4n) .timeline-content, .main-timeline5 .timeline:nth-child(4n) .timeline-content:before {
+    background: #c6449d
+}
+
+@media only screen and (max-width:1199px) {
+    .main-timeline5 .timeline {
+        margin-top: -103px
+    }
+    .main-timeline5 .timeline-content:before {
+        left: -18%
+    }
+    .main-timeline5 .timeline:nth-child(2n) .timeline-content:before {
+        right: -18%
+    }
+}
+
+@media only screen and (max-width:990px) {
+    .main-timeline5 .timeline {
+        margin-top: -123px
+    }
+    .main-timeline5 .timeline-content:before {
+        left: -2%
+    }
+    .main-timeline5 .timeline:nth-child(2n) .timeline-content:before {
+        right: -2%
+    }
+    .main-timeline5 .description {
+        font-size: 16px;
+        color: #fff;
+        line-height: 20px;
+        font-family: "Montserrat", sans-serif;
+        margin: 0
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .main-timeline5 .timeline {
+        margin-top: 0;
+        overflow: hidden
+    }
+    .main-timeline5 .timeline:before, .main-timeline5 .timeline:nth-child(2n):before {
+        box-shadow: none
+    }
+    .main-timeline5 .timeline-icon, .main-timeline5 .timeline:nth-child(2n) .timeline-icon {
+        margin-top: -30px;
+        margin-bottom: 20px;
+        position: relative;
+        transform: rotate(135deg)
+    }
+    .main-timeline5 .timeline:nth-child(2n) .year, .main-timeline5 .year {
+        transform: rotate(-135deg)
+    }
+    .main-timeline5 .timeline-content, .main-timeline5 .timeline:nth-child(2n) .timeline-content {
+        width: 100%;
+        float: none;
+        border-radius: 0 0 20px 20px;
+        text-align: center;
+        padding: 25px 20px;
+        margin: 0 auto
+    }
+    .main-timeline5 .timeline-content:before, .main-timeline5 .timeline:nth-child(2n) .timeline-content:before {
+        width: 15px;
+        height: 25px;
+        position: absolute;
+        top: -22px;
+        left: 50%;
+        z-index: -1;
+        transform: translate(-50%, 0)
+    }
+}
+
+/* contact*/
+
+.pb-100 {
+    padding-bottom: 0px;
+}
+
+.pt-100 {
+    padding-top: 50px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.section-title {
+    position: relative;
+}
+
+.section-title p {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-title h4 {
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: capitalize;
+    position: relative;
+    padding-bottom: 20px;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-title h4::before {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 2px;
+    background-color: #fff;
+    bottom: 0;
+    left: 50%;
+    margin-left: -40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-title h4::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: #44c6c6;
+    left: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -25px;
+}
+
+.contact {
+    background-color: #fff;
+    color: #000000;
+}
+
+.contact-form input, textarea {
+    width: 100%;
+    border: 1px solid #000000;
+    padding: 5px 10px;
+    text-transform: capitalize;
+    margin-top: 15px;
+    background-color: transparent;
+    color: #000000;
+}
+
+.contact:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    z-index: -1;
+    opacity: .85;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+}
+
+.contact-form input[type="submit"] {
+    background-color: #44c6c6;
+    border: 0px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-transition: .4s;
+    transition: .4s
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #44c6c6;
+}
+
+.contact-form input:focus, textarea:focus {
+    border-color: #44c6c6;
+}
+
+/*second part*/
+
+#second-part {
+    margin-top: 0px;
+    background-color: transparent;
+    width: 100%;
+}
+
+ol {
+    position: relative;
+    margin-top: 30px 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+}
+
+ol li {
+    list-style: none;
+    margin: 60px 0px;
+}
+
+ol li .fa {
+    font-size: 40px;
+    color: #000000;
+    line-height: 80px;
+    transition: .5s;
+}
+
+ol li a {
+    position: relative;
+    display: block;
+    width: 80px;
+    margin-left: auto;
+    margin-right: 15px;
+    height: 80px;
+    background-color: #fff;
+    text-align: center;
+    transform: perspective(100px) rotate(-30deg) skew(25deg) translate(0, 0);
+    transition: .5s;
+    box-shadow: -20px 20px 10px rgb(0, 0, 0, 0.5);
+}
+
+ol li a::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    height: 100%;
+    width: 20px;
+    background: #b1b1b1;
+    transition: .5s;
+    transform: rotate(0deg) skewY(-45deg);
+}
+
+ol li a::after {
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: -11px;
+    height: 20px;
+    width: 100%;
+    background: #b1b1b1;
+    transition: .5s;
+    transform: rotate(0deg) skewX(-45deg);
+}
+
+ol li a:hover {
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+    box-shadow: -50px 50px 50px rgb(0, 0, 0, 0.5);
+}
+
+ol li:hover .fa {
+    color: #fff;
+}
+
+ol li a:hover {
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+    box-shadow: -50px 50px 50px rgb(0, 0, 0, 0.5);
+}
+
+ol li:hover:nth-child(1) a {
+    background: #44c6c6;
+}
+
+ol li:hover:nth-child(1) a:before {
+    background: #44c6c6;
+}
+
+ol li:hover:nth-child(1) a:after {
+    background: #44c6c6;
+}
+
+ol li:hover:nth-child(2) a {
+    background: #7F00FF;
+}
+
+ol li:hover:nth-child(2) a:before {
+    background: #8b1ef9;
+}
+
+ol li:hover:nth-child(2) a:after {
+    background: #9e40fc;
+}
+
+ol li:hover:nth-child(3) a {
+    background: #262626;
+}
+
+ol li:hover:nth-child(3) a:before {
+    background: #4a4949;
+}
+
+ol li:hover:nth-child(3) a:after {
+    background: #7b7575;
+}
+
+ol li:hover:nth-child(4) a {
+    background: #0077B5;
+}
+
+ol li:hover:nth-child(4) a:before {
+    background: #036aa0;
+}
+
+ol li:hover:nth-child(4) a:after {
+    background: #0d82bf;
+}
+
+ol li:hover:nth-child(5) a {
+    background: #228B22;
+}
+
+ol li:hover:nth-child(5) a:before {
+    background: #468c46;
+}
+
+ol li:hover:nth-child(5) a:after {
+    background: #56bf56
+}
+
+/*footer*/
+
+.footer {
+    background-color: #000000;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+/*arrow*/
+
+.intro-copy {
+    padding: 1em;
+    margin: 50vh auto;
+    max-width: 15em;
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-size: 2em;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.top-link {
+    transition: all .25s ease-in-out;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: inline-flex;
+    z-index: 111;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3em 3em 0;
+    border-radius: 50%;
+    padding: .25em;
+    width: 80px;
+    height: 80px;
+    background-color: #F8F8F8;
+}
+
+svg {
+    fill: #000;
+    width: 24px;
+    height: 12px;
+}
+
+.top-tink hover {
+    background-color: #E8E8E8;
+}
+
+svg {
+    fill: #000000;
+}
+
+/* Text meant only for screen readers.*/
+
+.screen-reader-text {
+    position: absolute;
+    clip-path: inset(50%);
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    word-wrap: normal !important;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.sceen-reader-text focus {
+    display: block;
+    top: 5px;
+    left: 5px;
+    z-index: 100000;
+    clip-path: none;
+    background-color: #eee;
+    padding: 15px 23px 14px;
+    width: auto;
+    height: auto;
+    text-decoration: none;
+    line-height: normal;
+    color: #444;
+    font-size: 1em;
+    clip: auto !important;
+}
+
+.brand-navbar img {
+    height: 100px;
+}
+
+@media (max-width: 992px) {
+    .aboutme-section {
+        height: auto !important;
+    }
+    .h-img {
+        width: 100%;
+    }
+    .header-text h2 {
+        font-size: 40px;
+    }
+    .footer p {
+        font-size: 12px;
+    }
+    .brand-navbar img {
+        height: 80px;
+    }
+}
+
+@media (max-width: 767px) {
+    .top-link {
+        margin: 0 1em 1em 0;
+        width: 50px;
+        height: 50px;
+    }
+    .aboutme-section {
+        height: auto !important;
+    }
+    .h-img {
+        width: 100%;
+    }
+    .header-text h2 {
+        font-size: 30px;
+    }
+    .footer p {
+        font-size: 12px;
+    }
+    .brand-navbar img {
+        height: 65px;
+    }
+    .my-25 {
+        margin: 30px 0;
+    }
+    .header-text {
+        height: 50vh;
+    }
+    ol li a::before {
+        top: 15px;
+        left: -11px;
+        height: 87%;
+        width: 12px;
+    }
+    ol li a::after {
+        top: 65px;
+        left: -5px;
+        height: 12px;
+    }
+    ol li a {
+        width: 65px;
+        margin-right: auto;
+        height: 65px;
+    }
+}
