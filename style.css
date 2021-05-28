@@ -944,19 +944,14 @@ html, body {
     background: #fff !important;
     font-family: "Montserrat", sans-serif;
 }
-.demo:hover, demo:focus{
-    background-color: #44c6c6;
-    border-color: #44c6c6;
-    box-shadow: none;
-    outline: none;
-    color: #fff;
-}
+
 
 .btn-primary:hover, .btn-primary:focus {
     background-color: #44c6c6;
     border-color: #44c6c6;
     box-shadow: none;
     outline: none;
+    color: #fff;
 }
 
 .btn-primary {
