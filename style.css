@@ -385,6 +385,12 @@ html, body {
         height: 50vh !important;
         background-size: contain;
     }
+    #myVideo {
+    height: 100%;
+    width: 100%;
+    object-fit: unset;
+    
+}
     .aboutme-section {
         padding: 90px 0px;
         background-color: white;
