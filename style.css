@@ -79,6 +79,14 @@ html, body {
     color: #44c6c6;
 }
 
+#navigation{
+    background-color: rgba(0, 0, 0);
+    position: fixed;
+    width: 100%;
+    display: inline-flex;
+    z-index: 111;
+}
+
 /*about*/
 
 .aboutme-section {
